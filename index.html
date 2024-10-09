@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+
+<div class="container w-50 shadow mt-5">
+<h1>CRUproductPriceD system</h1>
+<label for="">productName:</label>
+<input type="text" name="productName" id="productName" class="form-control mb-2">
+<label for="">productCategory:</label>
+<input type="text" name="productCategory" id="productCategory" class="form-control mb-2">
+<label for="">productPrice:</label>
+<input type="text" name="productPrice" id="productPrice" class="form-control mb-2">
+<label for="">productDescription:</label>
+<textarea name="" id="productDescription" class="form-control mb-2">
+</textarea>
+<button type="button" class="btn btn-outline-info mb-5" onClick="createProduct()" id="update">add Product</button>
+<button type="button" class="btn btn-outline-info mb-5" onClick="clearProduct()">Clear</button>
+</div>
+<input type="text" name="search" id="search" class="form-control mb-2 w-25 container mt-5" >
+<table class="table container">
+  <thead>
+    <th>index</th>
+    <th>name:</th>
+    <th>category:</th>
+    <th>price:</th>
+    <th>description:</th>
+    <th>Update</th>
+    <th>Delete</th>
+  </thead>
+  <tbody id="tbody">
+
+  </tbody>
+</table>
+
+    <script src="js/script.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
